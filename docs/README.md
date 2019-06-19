@@ -2,6 +2,10 @@
 
 The goal of Ping Identity DevOps is to enable DevOps, administrators and developers with tools, frameworks, blueprints and reference architectues to deploy Ping Identity software in the cloud.
 
+>**Note:** These docs relate to the latest tagged version of 1906. Tags correlate to 3 repositories: [Docker-Builds](https://github.com/pingidentity/pingidentity-docker-builds), [Getting-Started](https://github.com/pingidentity/pingidentity-devops-getting-started), [Server-Profiles](https://github.com/pingidentity/pingidentity-server-profiles). Be sure to use each of the repositories as appropriate for consistency (e.g. append `:1906` to images and use server-profiles that are part of the 1906 tag.)
+    
+
+
 ## Why Containerization?
 
 **Deployments with Confidence** - Maintain all configurations and dependencies ensuring consistent environments. Eliminate the "it works on my machine" problem.
