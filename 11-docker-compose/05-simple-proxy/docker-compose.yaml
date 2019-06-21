@@ -2,7 +2,7 @@ version: "3.1"
 
 services:
   pingdirectoryproxy:
-    image: pingidentity/pingdirectoryproxy${PING_IDENTITY_DEVOPS_TAG}
+    image: pingidentity/pingdirectoryproxy:edge
     volumes:
       - /ws/devops/tmp/pingid:/opt/in
     environment:
@@ -22,7 +22,7 @@ services:
       - pingnet-internal
 
   pingdirectory:
-    image: pingidentity/pingdirectory${PING_IDENTITY_DEVOPS_TAG}
+    image: pingidentity/pingdirectory:edge
     environment:
       - VERBOSE=false
       # This server profile delivers extensions
@@ -45,7 +45,7 @@ services:
       - pingnet-internal
 
   pingdataconsole:
-    image: pingidentity/pingdataconsole
+    image: pingidentity/pingdataconsole:edge
     ports:
       - 8080:8080
       - 8443:8443
